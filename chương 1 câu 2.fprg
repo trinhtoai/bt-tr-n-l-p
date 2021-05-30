@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-22 08:55:05 AM"/>
+        <attribute name="created" value="QWRtaW47QURNSU47MjAyMS0wMi0yMjswODozNjo0OCBBTTsyMTE5"/>
+        <attribute name="edited" value="QWRtaW47QURNSU47MjAyMS0wMi0yMjswODo1NTowNSBBTTsxOzIyMjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <declare name="d" type="Integer" array="False" size=""/>
+            <declare name="x" type="Real" array="False" size=""/>
+            <declare name="x1" type="Real" array="False" size=""/>
+            <declare name="x2" type="Real" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="d" expression="(b^2)-4*a*c"/>
+            <if expression="a=0">
+                <then>
+                    <if expression="b=0">
+                        <then>
+                            <if expression="c=0">
+                                <then>
+                                    <output expression="&quot;ptvsn&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;ptvn&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <assign variable="x" expression="-c/b"/>
+                            <output expression="&quot;x&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="d&gt;=0">
+                        <then>
+                            <assign variable="x1" expression="(-b+sqrt(d))/(2*a)"/>
+                            <assign variable="x2" expression="(-b-sqrt(d))/(2*a)"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;ptvn&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-22 08:58:57 AM"/>
+        <attribute name="created" value="QWRtaW47QURNSU47MjAyMS0wMi0yMTswMzoxNDozNCBQTTsyMTE5"/>
+        <attribute name="edited" value="QWRtaW47QURNSU47MjAyMS0wMi0yMjswODo1ODo1NyBBTTsyOzIyMzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Real" array="False" size=""/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="a=0">
+                <then>
+                    <if expression="b=0">
+                        <then>
+                            <output expression="&quot;ptvsn&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;ptvn&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <assign variable="x" expression="(c-b)/a"/>
+                    <output expression="x" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
